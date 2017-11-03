@@ -19,7 +19,7 @@ class Sketch : NSObject {
         x = 250
         
         // take off borders
-        //        canvas.drawShapesWithBorders = false
+            canvas.drawShapesWithBorders = false
         
     }
     
@@ -32,16 +32,22 @@ class Sketch : NSObject {
         
         // Draw an ellipse in the middle of the canvas
         canvas.fillColor = Color.red
-        canvas.drawEllipse(centreX: x, centreY: 250, width: 50, height: 50)
+        canvas.drawEllipse(centreX: x, centreY: 300, width: 50, height: 50)
         
         //           change color and add new moving ball.
         
         canvas.fillColor = Color.green
-        canvas.drawEllipse(centreX: x, centreY: 100, width: 50, height: 50)
+        canvas.drawEllipse(centreX: x, centreY: 200, width: 50, height: 50)
         
         canvas.fillColor = Color.blue
-        canvas.drawEllipse(centreX: 500-x, centreY: 170, width: 50, height: 50)
+        canvas.drawEllipse(centreX: 500-x, centreY: 250, width: 50, height: 50)
       
+        canvas.fillColor = Color.purple
+        canvas.drawEllipse(centreX: 500-x, centreY: 150, width: 50, height: 50)
+        canvas.fillColor = Color.yellow
+        canvas.drawEllipse(centreX: x, centreY: 100, width: 50, height: 50)
+        
+        
         
     }
     
